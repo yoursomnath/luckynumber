@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&family=Ysabeau+SC&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Ysabeau SC', sans-serif;
+	user-select: none;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #ffbbe2;
+	overflow: hidden;
+	background: linear-gradient(174deg, rgba(87,88,238,1) 0%, rgba(116,124,242,1) 50%); 
+}
+.container{
+	display: flex;
+	width: 700px;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	flex-direction: column;
+	grid-gap: 10%;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+/*	opacity: 0.4;*/
+}
+h1{
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 10px;
+	width: 80%;
+
+}
+.form{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	grid-gap: 10px;
+	width: 80%;
+	height: 60%;
+}
+label{
+	font-size: 20px;
+	width: 80%;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+input{
+	width: 80%;
+	height: 40px;
+	padding: 10px;
+	outline: none;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	border: none;
+
+}
+.btn{
+	height: 50px;
+	margin-top: 20px;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+	padding-bottom: 5px;
+	font-size: 20px;
+	border: none;
+	color: white;
+	background: black;
+	font-weight: 1000;
+}
+.msg-box{
+	display: none;
+	height: 300px;
+	width: 600px;
+	position: absolute;
+	background: white;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 20%;
+	flex-direction: column;
+	padding: 40px;
+	text-align: center;
+	background-size: cover;
+	font-weight: 1000;
+	background-image: url("bg.png");
+	font-size: 23px;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.ok{
+	background: black;
+	color: white;
+	height: 40px;
+	padding: 5px;
+	width: 100px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+@media only screen and (max-width: 750px){
+	.container{
+		height: 60vh;
+		width: 90%;
+		grid-gap: 0px;
+	}
+	.form{
+		width: 100%;
+	}
+	.msg-box{
+		height: 250px;
+		width: 90%;
+	}
+}
